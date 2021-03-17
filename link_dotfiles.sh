@@ -102,6 +102,7 @@ info "All dotfiles will be installed to $HOME"
 echo_g "Installing tmux"
 apt tmux
 echo_g "Installing ohmyzsh"
+apt zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -s $PWD/zshrc ~/.zshrc
 sudo chsh -s /usr/bin/zsh
